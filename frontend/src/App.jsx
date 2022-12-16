@@ -46,6 +46,7 @@ const App = () => {
       const { ethereum } = window;
 
       if (!ethereum) {
+        alert("Metamask not detected, please install Metamask");
         console.log("Metamask not detected");
         return;
       }
@@ -56,7 +57,7 @@ const App = () => {
       const goerliChainId = "0x5";
 
       if (chainId !== goerliChainId) {
-        alert("You are not connected to the Rinkeby Testnet!");
+        alert("You are not connected to the Goerli Testnet!");
         return;
       } else {
         setCorrectNetwork(true);
