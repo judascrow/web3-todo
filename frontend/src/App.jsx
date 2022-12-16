@@ -159,7 +159,6 @@ const App = () => {
               size="small"
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              required
             />
             <Button variant="contained" color="primary" onClick={addTask}>
               Add Task
